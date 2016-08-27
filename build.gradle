@@ -1,0 +1,63 @@
+buildscript {
+    ext {
+        kotlinVersion = '1.0.4-eap-100'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap/" }
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+allprojects {
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+
+    version = '1.0'
+    ext {
+        appName = "Abacus Fighter"
+        ashleyVersion = '1.7.3-SNAPSHOT'
+        gdxVersion = '1.9.4'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap/" }
+    }
+}
+
+project(":desktop") {
+    apply plugin: "java"
+    apply plugin: "kotlin"
+
+    dependencies {
+        compile project(":core")
+        compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+        compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        compile "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+    }
+}
+
+project(":core") {
+    apply plugin: "java"
+    apply plugin: "kotlin"
+
+    dependencies {
+        compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+        compile "com.badlogicgames.ashley:ashley:$ashleyVersion"
+        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+        compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+    }
+}

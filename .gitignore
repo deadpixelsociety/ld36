@@ -1,0 +1,9 @@
+#dirs
+/.gradle
+/.idea
+/build
+
+#files
+*.jar
+!gradle-wrapper.jar
+
