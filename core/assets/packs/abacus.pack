@@ -1,0 +1,89 @@
+
+abacus.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+title
+  rotate: false
+  xy: 1, 1
+  size: 1285, 998
+  orig: 1285, 998
+  offset: 0, 0
+  index: -1
+stand
+  rotate: false
+  xy: 1288, 426
+  size: 540, 573
+  orig: 540, 573
+  offset: 0, 0
+  index: -1
+100000
+  rotate: false
+  xy: 1288, 383
+  size: 160, 41
+  orig: 160, 41
+  offset: 0, 0
+  index: -1
+arrow
+  rotate: false
+  xy: 1830, 924
+  size: 111, 75
+  orig: 111, 75
+  offset: 0, 0
+  index: -1
+10000
+  rotate: false
+  xy: 1288, 340
+  size: 133, 41
+  orig: 133, 41
+  offset: 0, 0
+  index: -1
+1000
+  rotate: false
+  xy: 1450, 383
+  size: 107, 41
+  orig: 107, 41
+  offset: 0, 0
+  index: -1
+100
+  rotate: false
+  xy: 1830, 885
+  size: 71, 37
+  orig: 71, 37
+  offset: 0, 0
+  index: -1
+bead_orange
+  rotate: false
+  xy: 1943, 931
+  size: 25, 68
+  orig: 25, 68
+  offset: 0, 0
+  index: -1
+bead_red
+  rotate: false
+  xy: 1288, 270
+  size: 25, 68
+  orig: 25, 68
+  offset: 0, 0
+  index: -1
+bead_yellow
+  rotate: false
+  xy: 1830, 815
+  size: 25, 68
+  orig: 25, 68
+  offset: 0, 0
+  index: -1
+10
+  rotate: false
+  xy: 1423, 344
+  size: 45, 37
+  orig: 45, 37
+  offset: 0, 0
+  index: -1
+1
+  rotate: false
+  xy: 1559, 389
+  size: 9, 35
+  orig: 9, 35
+  offset: 0, 0
+  index: -1
