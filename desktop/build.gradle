@@ -25,4 +25,10 @@ task dist(type: Jar) {
     }
 }
 
+task distSounds(type:Copy) {
+    from file("../assets/sounds")
+    into file("$buildDir/sounds")
+}
+
 dist.dependsOn classes
+distSounds.dependsOn dist

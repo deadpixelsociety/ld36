@@ -1,7 +1,7 @@
 #dirs
-/.gradle
-/.idea
-/build
+.gradle
+.idea
+build
 
 #files
 *.jar
